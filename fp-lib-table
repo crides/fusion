@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "keeb-libs")(type "KiCad")(uri "${KIPRJMOD}/keeb-libs/keeb-libs.pretty")(options "")(descr ""))
+  (lib (name "fusion")(type "KiCad")(uri "${KIPRJMOD}/fusion.pretty")(options "")(descr ""))
 )

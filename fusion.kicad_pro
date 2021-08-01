@@ -55,7 +55,9 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|163739921|77316371|f1389508-9902-41c2-9822-09a6d6b663ef|e9c28fcc-6ac4-4cad-96b3-6b75e6f118f3"
+      ],
       "meta": {
         "version": 2
       },
@@ -118,7 +120,6 @@
       },
       "track_widths": [
         0.0,
-        0.1524,
         0.508
       ],
       "via_dimensions": [

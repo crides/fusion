@@ -1,4 +1,4 @@
-18953133523264756
+18958018798955554
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81780,6 +81780,27 @@ varistor SIOV
 0
 2
 2
+fusion
+hinge
+
+
+0
+8
+8
+fusion
+hinge-conn-1
+
+
+0
+15
+12
+fusion
+hinge-conn-2
+
+
+0
+22
+6
 keeb-libs
 Adafruit-Sharp-Memory-Display-1.3in
 
@@ -81815,13 +81836,6 @@ Holyiot-18010-no-underside
 0
 37
 37
-keeb-libs
-Kailh_PG1232
-
-
-0
-6
-4
 keeb-libs
 LCD2.2in
 
@@ -81870,6 +81884,13 @@ debug-port
 
 0
 4
+4
+keeb-libs
+pg1232
+
+
+0
+6
 4
 keeb-libs
 pg1232-short
