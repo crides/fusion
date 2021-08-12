@@ -1,21 +1,20 @@
-(module hinge (layer F.Cu) (tedit 610F1CCC)
-  (fp_text reference REF** (at 0 -3) (layer F.Fab) hide
+(module hinge (layer F.Cu) (tedit 610F1862)
+  (fp_text reference REF** (at 0 -3) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value hinge (at 1.5 3) (layer F.Fab) hide
+  (fp_text value hinge (at 1.5 3) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_arc (start 0 -8) (end 2.27758 -8.711744) (angle -180) (layer Edge.Cuts) (width 0.15))
-  (fp_line (start 0 0) (end -2.27758 -7.288256) (layer Edge.Cuts) (width 0.15))
+  (fp_arc (start 0 -8) (end -2.3862 -7.63584) (angle 171.322988) (layer Edge.Cuts) (width 0.15))
+  (fp_line (start 0 0) (end -2.3862 -7.63584) (layer Edge.Cuts) (width 0.15))
   (fp_line (start 5 0) (end 2.27758 -8.711744) (layer Edge.Cuts) (width 0.15))
-  (pad "" np_thru_hole circle (at 0 -8) (size 2.1 2.1) (drill 2.1) (layers *.Cu *.Mask))
-  (pad 1 smd custom (at 0 0) (size 0 0) (layers F.Cu F.Mask)
+  (pad 1 smd custom (at 0 0) (size 0.0001 0.0001) (layers F.Cu F.Mask)
     (options (clearance outline) (anchor circle))
     (primitives
       (gr_poly (pts
          (xy 0 0) (xy 5 0) (xy 4.105175 -3) (xy -0.894825 -3)) (width 0))
     ))
-  (pad 1 smd custom (at 0 0) (size 0 0) (layers B.Cu B.Mask)
+  (pad 1 smd custom (at 0 0) (size 0.0001 0.0001) (layers B.Cu B.Mask)
     (options (clearance outline) (anchor circle))
     (primitives
       (gr_poly (pts

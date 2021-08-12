@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 4.6,
+          "height": 4.6,
+          "width": 4.6
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -110,7 +110,7 @@
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.19999999999999998,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.39999999999999997,
@@ -380,20 +380,12 @@
         "microvia_drill": 0.1,
         "name": "tight",
         "nets": [
-          "K23",
-          "K25",
-          "K26",
-          "K27",
-          "L_K1",
-          "L_K10",
-          "L_K2",
-          "L_K3",
-          "L_K4",
-          "L_K5",
-          "L_K6",
-          "L_K7",
-          "L_K8",
-          "L_K9"
+          "/trackpad/MOSI_2V8",
+          "/trackpad/SCK_2V8",
+          "/trackpad/SHTDWN_2V8",
+          "/trackpad/~{CS}_2V8",
+          "Net-(J7-Pad10)",
+          "Net-(J7-Pad14)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -463,6 +455,22 @@
     [
       "523304b3-2e58-4f0f-99fa-4309bc45eb51",
       ""
+    ],
+    [
+      "4e4d3218-51a5-4efe-849a-8e9f929860e7",
+      "trackpad_conn"
+    ],
+    [
+      "b025309d-e14a-4618-a5e2-fabc6dc93b95",
+      "left"
+    ],
+    [
+      "fc4e8313-eb71-4a8c-80c8-833de4e5d26d",
+      "power"
+    ],
+    [
+      "81ccad4c-6899-4a71-a70c-70a2981723b4",
+      "trackpad"
     ]
   ],
   "text_variables": {}
