@@ -1,4 +1,4 @@
-19032944496797599
+19031318710809363
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81802,18 +81802,18 @@ hinge
 8
 1
 fusion
-hinge-conn-1
+hinge-big
 
 
 0
-16
+22
 1
 fusion
-hinge-conn-2
+hinge-small
 
 
 0
-23
+14
 1
 fusion
 magnet-fp
@@ -81834,22 +81834,15 @@ trackpad
 
 
 0
-8
-8
+9
+1
 fusion
-trackpad-hole
+trackpad-conn
 
 
 0
-0
-0
-fusion
-trackpad_conn
-
-
-0
-24
-8
+16
+1
 keeb-libs
 Adafruit-Sharp-Memory-Display-1.3in
 
