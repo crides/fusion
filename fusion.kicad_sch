@@ -5377,7 +5377,7 @@
     (property "Value" "diode-choc" (id 1) (at 209.2961 102.1331 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSS" (id 2) (at 205.74 95.25 0)
+    (property "Footprint" "pg1232:pg1232-DSSL" (id 2) (at 205.74 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 205.74 95.25 0)
@@ -5396,7 +5396,7 @@
     (property "Value" "diode-choc" (id 1) (at 209.2961 112.2931 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSS" (id 2) (at 205.74 105.41 0)
+    (property "Footprint" "pg1232:pg1232-DSSL" (id 2) (at 205.74 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 205.74 105.41 0)
@@ -5415,7 +5415,7 @@
     (property "Value" "diode-choc" (id 1) (at 209.2961 122.4531 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSS" (id 2) (at 205.74 115.57 0)
+    (property "Footprint" "pg1232:pg1232-DSSL" (id 2) (at 205.74 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 205.74 115.57 0)
@@ -5434,7 +5434,7 @@
     (property "Value" "diode-choc" (id 1) (at 209.2961 132.6131 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSSR" (id 2) (at 205.74 125.73 0)
+    (property "Footprint" "pg1232:pg1232-DSSN" (id 2) (at 205.74 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 205.74 125.73 0)
@@ -5453,7 +5453,7 @@
     (property "Value" "diode-choc" (id 1) (at 219.4561 102.1331 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSSL" (id 2) (at 215.9 95.25 0)
+    (property "Footprint" "pg1232:pg1232-DSSN" (id 2) (at 215.9 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 215.9 95.25 0)
@@ -5472,7 +5472,7 @@
     (property "Value" "diode-choc" (id 1) (at 219.4561 112.2931 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSSL" (id 2) (at 215.9 105.41 0)
+    (property "Footprint" "pg1232:pg1232-DSSN" (id 2) (at 215.9 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 215.9 105.41 0)
@@ -5491,7 +5491,7 @@
     (property "Value" "diode-choc" (id 1) (at 219.4561 122.4531 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSSL" (id 2) (at 215.9 115.57 0)
+    (property "Footprint" "pg1232:pg1232-DSSN" (id 2) (at 215.9 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 215.9 115.57 0)
@@ -5510,7 +5510,7 @@
     (property "Value" "diode-choc" (id 1) (at 219.4561 132.6131 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "pg1232:pg1232-DSSR" (id 2) (at 215.9 125.73 0)
+    (property "Footprint" "pg1232:pg1232-DSSN" (id 2) (at 215.9 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 215.9 125.73 0)
@@ -6089,10 +6089,10 @@
       (reference "JP6") (unit 1) (value "Jumper_3_Open") (footprint "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/ec8f0ec2-64d7-4a10-99b7-c29746a93bf2"
-      (reference "K1") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
+      (reference "K1") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/ea55e616-5286-4c86-9c28-1f4fd64101ea"
-      (reference "K2") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
+      (reference "K2") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/dbaba7ab-9e69-492a-aef6-419cd8a9589a"
       (reference "K3") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
@@ -6104,10 +6104,10 @@
       (reference "K5") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/eb00e312-85c3-4881-87de-934f677ff6da"
-      (reference "K6") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
+      (reference "K6") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/39786762-286c-4388-aea0-bd31a9f816a8"
-      (reference "K7") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
+      (reference "K7") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/b7ab6c15-e56f-4316-a306-8eaffb46142a"
       (reference "K8") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
@@ -6119,10 +6119,10 @@
       (reference "K10") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/37f8abae-7333-43fb-99a4-da93acedc704"
-      (reference "K11") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
+      (reference "K11") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/68e20e26-32a0-4290-994f-29c8ee51c370"
-      (reference "K12") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
+      (reference "K12") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
     )
     (path "/b025309d-e14a-4618-a5e2-fabc6dc93b95/761f5148-54d9-40e5-afe0-bb083f7aebe2"
       (reference "K13") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
@@ -6152,10 +6152,10 @@
       (reference "K21") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
     )
     (path "/a2751d21-116d-4919-a086-ff623395a909"
-      (reference "K22") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
+      (reference "K22") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
     )
     (path "/e0276649-86b3-489f-adee-25773aff83dd"
-      (reference "K23") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
+      (reference "K23") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/9f3fa4fe-5952-4a9d-bdcf-1cc867e9f28e"
       (reference "K24") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
@@ -6167,10 +6167,10 @@
       (reference "K26") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
     )
     (path "/c0724dd3-1150-4fa2-8615-6c3c918d177f"
-      (reference "K27") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
+      (reference "K27") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
     )
     (path "/b2f94a00-b47b-457b-b67a-ebf74ff78fd0"
-      (reference "K28") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
+      (reference "K28") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/588b9435-5c8c-4b21-b648-6a2c93badb70"
       (reference "K29") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
@@ -6182,10 +6182,10 @@
       (reference "K31") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
     )
     (path "/08860645-1a04-42cc-86a1-71433fbebf2d"
-      (reference "K32") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
+      (reference "K32") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
     )
     (path "/6693fc87-39b5-4df2-96fc-bb16e0f26ce7"
-      (reference "K33") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSL")
+      (reference "K33") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/0a5613c6-21cf-4887-8e46-b7c8bc527b5d"
       (reference "K34") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
@@ -6197,10 +6197,10 @@
       (reference "K36") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSS")
     )
     (path "/175e3bc8-bf50-4f06-bba6-540b3a2a2eae"
-      (reference "K37") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
+      (reference "K37") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/3f566f17-ccaa-4d39-a0ab-0258a2b72084"
-      (reference "K38") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSR")
+      (reference "K38") (unit 1) (value "diode-choc") (footprint "pg1232:pg1232-DSSN")
     )
     (path "/60cf3122-165f-4c8f-8410-6cfec7ab4ce2"
       (reference "LCD1") (unit 1) (value "SHARP_LCD") (footprint "keeb-libs:Adafruit-Sharp-Memory-Display-1.3in-no-mounting")

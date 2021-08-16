@@ -1,4 +1,4 @@
-19031318710809363
+19037845320834202
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81998,6 +81998,13 @@ pg1232-DRSSL
 9
 5
 pg1232
+pg1232-DRSSN
+
+
+0
+9
+5
+pg1232
 pg1232-DRSSR
 
 
@@ -82034,6 +82041,13 @@ pg1232-DSS
 5
 pg1232
 pg1232-DSSL
+
+
+0
+7
+5
+pg1232
+pg1232-DSSN
 
 
 0
@@ -82089,6 +82103,13 @@ pg1232-RSSL
 6
 4
 pg1232
+pg1232-RSSN
+
+
+0
+6
+4
+pg1232
 pg1232-RSSR
 
 
@@ -82125,6 +82146,13 @@ pg1232-SS
 4
 pg1232
 pg1232-SSL
+
+
+0
+4
+4
+pg1232
+pg1232-SSN
 
 
 0
