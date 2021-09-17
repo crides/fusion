@@ -1,5 +1,4 @@
 (sym_lib_table
   (lib (name "keeb-libs")(type "Legacy")(uri "${KIPRJMOD}/keeb-libs/keeb-libs.lib")(options "")(descr ""))
   (lib (name "diode-choc")(type "Legacy")(uri "${KIPRJMOD}/choc/diode-choc.lib")(options "")(descr ""))
-  (lib (name "diode-choc-6")(type "KiCad")(uri "${KIPRJMOD}/diode-choc-6.kicad_sym")(options "")(descr ""))
 )

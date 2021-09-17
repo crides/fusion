@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 4.6,
-          "height": 4.6,
-          "width": 4.6
+          "drill": 0.0,
+          "height": 1.68,
+          "width": 1.68
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -55,36 +55,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "clearance|102665334|90766508|4e67e736-21c3-4c9f-9fad-386b05ea06f2|468a014a-68e9-4125-802b-cdf421be305b",
-        "clearance|102665334|90766508|4e67e736-21c3-4c9f-9fad-386b05ea06f2|981ca839-9f55-4613-8b15-6485fe40124b",
-        "clearance|105165334|91566508|9b446856-d2eb-4ce0-b1b8-566acbc7cbb3|468a014a-68e9-4125-802b-cdf421be305b",
-        "clearance|105165334|96066508|2638f877-69e1-4cb9-b28a-2137f6668006|468a014a-68e9-4125-802b-cdf421be305b",
-        "clearance|105165334|96066508|2638f877-69e1-4cb9-b28a-2137f6668006|981ca839-9f55-4613-8b15-6485fe40124b",
-        "clearance|131649060|125675031|d08134c9-6f24-49f3-9323-deca9e0a62a7|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|131649060|125675031|d08134c9-6f24-49f3-9323-deca9e0a62a7|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|131649060|130175031|b03856ed-a110-4796-a58c-2f3226c94bea|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|131649060|130175031|b03856ed-a110-4796-a58c-2f3226c94bea|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|131649060|131675031|3e0089a3-9cae-48a6-b79f-b2d2bd2eebe7|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|131649060|131675031|3e0089a3-9cae-48a6-b79f-b2d2bd2eebe7|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|134149060|124875031|d9a71ab4-d51b-4020-93d5-2e588574c4ae|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|134149060|124875031|d9a71ab4-d51b-4020-93d5-2e588574c4ae|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|134149060|124875031|f0a0ca31-5422-4969-b4f4-a527ebf8341f|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|134149060|124875031|f0a0ca31-5422-4969-b4f4-a527ebf8341f|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|134149060|132475031|67233b5a-d4e9-4973-8c6d-9952318780ff|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|134149060|132475031|67233b5a-d4e9-4973-8c6d-9952318780ff|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|134149060|132475031|e035f778-f9a6-424f-83ee-47482e7621d4|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|134149060|132475031|e035f778-f9a6-424f-83ee-47482e7621d4|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|135849060|132475031|3892c8a6-173b-4867-a90e-e2b4be716d64|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|135849060|132475031|3892c8a6-173b-4867-a90e-e2b4be716d64|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|136649060|125675031|c7a2622a-dab9-4cb9-ab08-5d50cb075ad4|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|136649060|125675031|c7a2622a-dab9-4cb9-ab08-5d50cb075ad4|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|136649060|127175031|6dbdd101-497d-460a-b2ff-9202055169f0|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|136649060|127175031|6dbdd101-497d-460a-b2ff-9202055169f0|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "clearance|136649060|130175031|e9635498-d53f-4be8-8856-4db1c4731f98|d9cbf006-76f5-475b-8f15-9baacc97187f",
-        "clearance|136649060|130175031|e9635498-d53f-4be8-8856-4db1c4731f98|e4897daa-6c44-414c-b06f-2db0698aeec0",
-        "courtyards_overlap|163739921|77316371|f1389508-9902-41c2-9822-09a6d6b663ef|e9c28fcc-6ac4-4cad-96b3-6b75e6f118f3"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -133,11 +104,11 @@
         "min_clearance": 0.127,
         "min_copper_edge_clearance": 0.19999999999999998,
         "min_hole_clearance": 0.19999999999999998,
-        "min_hole_to_hole": 0.5,
+        "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
-        "min_through_hole_diameter": 0.3,
+        "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.39999999999999997,
@@ -410,9 +381,8 @@
         "name": "tight",
         "nets": [
           "+2V8",
-          "/trackpad_conn/R11_conn",
-          "/trackpad_conn/R4_conn",
-          "MISO_DQ1",
+          "/trackpad-8520/KEY_OUT",
+          "GND",
           "MOSI_2V8",
           "MOTION",
           "SCK_2V8",
@@ -490,16 +460,16 @@
       ""
     ],
     [
-      "4e4d3218-51a5-4efe-849a-8e9f929860e7",
-      "trackpad_conn"
-    ],
-    [
       "b025309d-e14a-4618-a5e2-fabc6dc93b95",
       "left"
     ],
     [
       "fc4e8313-eb71-4a8c-80c8-833de4e5d26d",
       "power"
+    ],
+    [
+      "2ba0ccb9-bc18-435e-ae61-1972d88b92d7",
+      "trackpad-8520"
     ]
   ],
   "text_variables": {}
