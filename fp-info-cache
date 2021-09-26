@@ -1,4 +1,4 @@
-19037965768123671
+19044506037928747
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81788,6 +81788,13 @@ FM-B2020RGBA
 4
 4
 fusion
+bat-cover
+
+
+0
+0
+0
+fusion
 ferrum
 
 
@@ -81809,12 +81816,33 @@ hinge-big
 22
 1
 fusion
+hinge-mousebite
+
+
+0
+0
+0
+fusion
 hinge-small
 
 
 0
 14
 1
+fusion
+hinge1
+
+
+0
+0
+0
+fusion
+hinge2
+
+
+0
+0
+0
 fusion
 mount-magnet
 

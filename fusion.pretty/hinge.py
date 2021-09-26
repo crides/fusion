@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+
 from KicadModTree import Footprint, Pad, Text, Line, KicadFileHandler, Arc, Polygon
 import math
 
 name = "hinge"
 width = 5
-height = 8
+height = 8.1
 cu_height = 3
 
 radius = math.sqrt((height**2 * (width/2)**2)/(height**2 + (width/2)**2))
@@ -18,8 +20,9 @@ fp = Footprint(name)
 fp.append(Text(type='reference', text='REF**', at=[0, -3], layer='F.Fab', hide=True))
 fp.append(Text(type='value', text=name, at=[1.5, 3], layer='F.Fab', hide=True))
 
-fp.append(Line(start=(0, 0), end=left_point, layer='Edge.Cuts'))
-fp.append(Line(start=(width, 0), end=right_point, layer='Edge.Cuts'))
+fp.append(Line(start=(0, 0), end=left_point, layer='Cmts.User'))
+fp.append(Line(start=(width, 0), end=right_point, layer='Cmts.User'))
+fp.append(Line(start=(width, 0), end=(0, 0), layer='Edge.Cuts'))
 fp.append(Arc(start=right_point, end=left_point, center=(0, -height), layer='Edge.Cuts'))
 
 fp.append(Pad(type=Pad.TYPE_NPTH, shape=Pad.SHAPE_CIRCLE,
