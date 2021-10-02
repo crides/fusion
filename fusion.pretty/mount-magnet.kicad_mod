@@ -1,5 +1,5 @@
 (footprint "mount-magnet" (version 20210722) (generator pcbnew) (layer "F.Cu")
-  (tedit 614F6341)
+  (tedit 6153BEEE)
   (fp_text reference "REF**" (at 0 -3 unlocked) (layer "F.Fab")
     (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 67ba4bb9-e50d-4586-8638-fca7008de436)
@@ -10,7 +10,7 @@
   )
   (fp_circle (center 0 0) (end 4.8 0) (layer "Cmts.User") (width 0.12) (fill none) (tstamp b8070ab5-8a32-4325-9f02-f8542044af73))
   (pad "" np_thru_hole circle (at 0 0) (size 2.1 2.1) (drill 2.1) (layers *.Mask) (tstamp a2c7b625-6889-4c73-a605-8af14eab71f2))
-  (model "${KIPRJMOD}/spacer.step"
+  (model "${KIPRJMOD}/spacer.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

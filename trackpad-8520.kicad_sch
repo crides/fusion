@@ -1083,7 +1083,7 @@
   )
 
   (symbol (lib_id "Connector_Generic_MountingPin:Conn_02x10_Odd_Even_MountingPin") (at 50.8 165.1 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board yes)
     (uuid 499824ee-ab02-42dc-831f-157d93778dda)
     (property "Reference" "J5" (id 0) (at 52.07 144.6234 0))
     (property "Value" "Conn_02x10_Odd_Even_MountingPin" (id 1) (at 52.07 146.1285 0))

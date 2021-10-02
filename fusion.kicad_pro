@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -381,7 +381,6 @@
         "name": "tight",
         "nets": [
           "+2V8",
-          "/trackpad-8520/KEY_OUT",
           "GND",
           "MOSI_2V8",
           "MOTION",
@@ -409,8 +408,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "fusion.step",
+      "vrml": "fusion.wrl"
     },
     "page_layout_descr_file": ""
   },

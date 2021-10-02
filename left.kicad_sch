@@ -388,7 +388,7 @@
   )
 
   (symbol (lib_id "Device:Battery_Cell") (at 40.64 50.8 0) (unit 1)
-    (in_bom yes) (on_board yes)
+    (in_bom no) (on_board yes)
     (uuid 476dedba-6b55-4f85-9296-7b8a702bd50a)
     (property "Reference" "BT1" (id 0) (at 43.6372 48.3616 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -396,7 +396,7 @@
     (property "Value" "Battery_Cell" (id 1) (at 43.6372 50.673 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" (id 2) (at 40.64 49.276 90)
+    (property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" (id 2) (at 40.64 49.276 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 40.64 49.276 90)
