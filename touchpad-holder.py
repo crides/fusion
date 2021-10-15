@@ -98,5 +98,5 @@ def footprint():
                 layer='Cmts.User'),
     ]
 
-dump(whole, "touchpad-holder.scad")
+dump_this(whole, '$fa = 0.5;\n$fs = 0.1;')
 kicad_fp("touchpad-holder", footprint(), dir="fusion")

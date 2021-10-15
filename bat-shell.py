@@ -5,7 +5,7 @@ from solidff import *
 from KicadModTree import Pad, Text, Line, Arc, Polygon, RectLine
 from lib import kicad_fp, mount_tab_fp, m2_hole, nut_outer
 
-height = 5.3
+height = 6.5
 width = 31.3
 length = 36.5
 shell = 1.2
@@ -53,4 +53,4 @@ def fp():
 
 
 kicad_fp("bat-shell", fp(), dir="fusion")
-dump(whole, "bat-shell.scad")
+dump_this(whole, '$fa = 0.5;\n$fs = 0.1;')

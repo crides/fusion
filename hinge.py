@@ -12,9 +12,8 @@ mount_offset = 0
 gap = ridge_thick + nylon * 2 + ridge_thick
 
 def top():
-    hring = ring(od=washer_outer, id=m2_hole, center=True, hole=True)
-    slant = hull(hring.y(half_total_space), q(nut_outer, 0.1, ridge_thick).z(-ridge_thick / 2))
-    stick = slant + q(nut_outer, mount_thick, ridge_thick).z(-ridge_thick / 2)
+    hring = ring(od=washer_outer, id=m2_hole, center=True, hole=True).y(half_total_space)
+    stick = hull(hring, q(nut_outer, mount_thick, ridge_thick).z(-ridge_thick / 2))
     return stick.r(90, 0, 0)
 
 def mount():

@@ -23,7 +23,7 @@ def mount_tab_fp(bl, tl, c, tr, br):
 
 m2_hole = 2.0
 m2_thread = 1.6
-half_total_space = 6.85
+half_total_space = 7.5
 total_space = half_total_space * 2
 washer_outer = 5
 nut_outer = 4.5

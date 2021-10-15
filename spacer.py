@@ -17,4 +17,4 @@ bars = sum(bar.rotate(i * 360 / beam) for i in range(beam))
 
 whole = outer_ring + inner_ring + bars
 
-dump(whole, "spacer.scad", '$fa = 0.1;\n$fs = 0.1;')
+dump_this(whole, '$fa = 0.1;\n$fs = 0.1;')
