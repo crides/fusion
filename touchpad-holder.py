@@ -2,101 +2,43 @@
 
 import math
 from solidff import *
-from KicadModTree import Pad, Text, Line, Arc, Polygon, RectLine
-from lib import kicad_fp, mount_tab_fp, total_space, nut_outer
+from KicadModTree import Pad, Text, Line, Circle, Polygon, RectLine
+from lib import kicad_fp, mount_tab_fp, total_space, nut_outer, m2_hole
 
-wall = 1.5
+tol = 0.5
+tp_tall = 5.5 + tol
+tp_dia = 23.2 + 2 * tol
+tp_boss_dia = 0.8
+tp_boss_thick = 0.8
+tp_overlay_thick = 0.2
+tp_fpc_wide = 9 + tol
+tp_fpc_off = 17.4 - tp_dia / 2 + tol
+tp_chip_thick = 2.2
+thick = 1
 base_thick = 2
-m2_hole = 2.0
-tab_thick = 1.8
-tab_width = 10 #9.5
-touchpad_width = 8
-touchpad_corner = 1
-top_thick = 1.2
-top_tab_width = 5
-top_tab_corner = 2
-holder_thick = 1.5
 
-holder_total_thick = holder_thick + tab_thick + top_thick
-rotation = 45
-holder_rotated_thick = math.cos(math.radians(rotation)) * holder_total_thick \
-    + math.sin(math.radians(rotation)) * touchpad_width / 2 #tab_width / 2
-base_space = total_space - holder_rotated_thick
-hole_offset = 3 + nut_outer/2
-left_dist = (touchpad_width/2 + top_tab_width) * math.cos(math.radians(rotation)) - wall
+boss = c(d=tp_boss_dia).x(tp_dia / 2).e(tp_boss_thick)
+bosses = (boss.r(30) + boss.r(60) + boss.r(-135)).z(tp_tall - tp_boss_thick - tp_overlay_thick)
+top_ring = ring(h=thick, od=tp_dia, w=1).z(tp_tall - tp_boss_thick - tp_overlay_thick - thick)
+outer_shell = ring(h=tp_tall, id=tp_dia, w=thick)
+cutout = q(100, tp_fpc_wide, 2, center='y').r(180)
 
-PCB_width = 7
-PCB_thick = 3
-FPC_width = 5
-FPC_offset = 0.5
-FPC_thick = 1
-FPC_hole_len = 3
-
-def center_rect(l, r, t, b):
-    return s(r - l, t - b).x(l).y(b)
-
-def holder():
-    bot = s(tab_width, True).e(holder_thick)
-    fpc_hole_sketch = s(wall + PCB_width, PCB_thick) + s(wall + FPC_hole_len, FPC_width)
-    fpc_hole = fpc_hole_sketch.t(-wall - tab_width / 2, - (tab_width / 2 - FPC_offset)).e(holder_thick + FPC_thick)
-    horiz = s(tab_width, wall, True)
-    offset = wall / 2 + tab_width / 2
-    walls = horiz.y(offset) + horiz.y(-offset) + s(wall, tab_width + 2*wall, True).x(-offset)
-    walls = walls.e(holder_thick + tab_thick)
-    tab_outer_full = s(top_tab_width*2 + touchpad_width - 2*top_tab_corner, True).o(r=top_tab_corner)
-    right_offset = touchpad_width / 2 - 0.5
-    tab_outer = center_rect(-20, right_offset, 20, -20) * tab_outer_full
-    tab_inner = s(touchpad_width - 2*touchpad_corner, True).o(r=touchpad_corner)
-    tab = tab_outer - tab_inner
-    upper_hole = s(20, True).e(20).h()
-    holder = bot + walls + tab.e(top_thick).z(holder_thick + tab_thick) - fpc_hole + upper_hole.z(holder_total_thick)
-    return holder.r(0, -rotation, 0).x(math.sin(math.radians(rotation)) * holder_total_thick)
-
-def base():
-    forw_dist = 15
-    comp_thick = 3.5
-
-    def mount_tab():
-        sketch = center_rect(-nut_outer/2, nut_outer/2, 0, -nut_outer/2) + c(nut_outer/2) - c(m2_hole/2)
-        return sketch.e(base_thick).c("darkgreen")
-
-    fillet_corner = ((s(wall * 2, True) - c(wall)) * s(wall)).e(wall).x(-wall).r(90, 0, 0).z(-wall)
-
-    back_mount = mount_tab().y(-tab_width/2 + nut_outer/2).x(hole_offset)
-    back_wall = center_rect(-left_dist, nut_outer/2 + hole_offset, -tab_width/2, -tab_width/2-wall).e(total_space)
-
-    top_center_wall = center_rect(hole_offset - nut_outer/2, hole_offset + nut_outer/2, tab_width/2 + wall, tab_width/2).e(total_space)
-    top_left_wall = center_rect(-left_dist, hole_offset - nut_outer/2, tab_width/2 + wall, tab_width/2).e(total_space - comp_thick).z(comp_thick)
-    forw_mount = mount_tab().x(hole_offset).y(nut_outer/2 + wall + tab_width/2)
-
-    left_wall = center_rect(-left_dist - wall, -left_dist, tab_width/2 + wall, -tab_width/2 - wall).e(total_space - comp_thick).z(comp_thick)
-
-    comp_hole = q(hole_offset - nut_outer / 2 + left_dist, tab_width + wall, comp_thick).t(-left_dist - wall, -tab_width/2).h()
-
-    walls = top_center_wall + top_left_wall + back_wall + left_wall + \
-        fillet_corner.t(-left_dist, -tab_width/2, comp_thick) + \
-        fillet_corner.t(hole_offset - nut_outer/2, tab_width/2 + wall, comp_thick)
-
-    return walls + forw_mount + back_mount + comp_hole
-
-def whole():
-    return holder().z(base_space).c("royalblue") + base()
+mount_off = (tp_dia / 2 - thick - nut_outer / 2) / math.sqrt(2)
+mount = (s(10).o(r=nut_outer / 2) - c(d=m2_hole)).t(mount_off, mount_off).e(base_thick).r(45)
+mounts = mount + mount.r(180)
+mounts *= cy(d=tp_dia, h=10)
+whole = outer_shell + bosses + top_ring + mounts - cutout
 
 def footprint():
-    n = nut_outer
-    hn = n / 2
-    w = wall
-    t = tab_width
-    ht = t / 2
-    ho = hole_offset
-    ld = left_dist
-    mount_tab = lambda x, y: mount_tab_fp((x-hn,-y+hn), (x-hn,-y), (x,-y), (x+hn,-y), (x+hn,-y+hn))
+    mount_off = tp_dia / 2 - thick - nut_outer / 2
     return [
-        *mount_tab(ho, hn-ht), *mount_tab(ho, hn+w+ht),
-        Polygon(nodes=[(-ld-w,-ht-w), (ho+hn,-ht-w), (ho+hn,-ht), (-ld,-ht), 
-                       (-ld,ht), (hn+ho,ht), (hn+ho,ht+w), (-ld-w,ht+w)],
-                layer='Cmts.User'),
+        Pad(type=Pad.TYPE_NPTH, shape=Pad.SHAPE_CIRCLE,
+              at=(0, mount_off), size=(m2_hole, m2_hole), drill=m2_hole, layers=Pad.LAYERS_NPTH),
+        Pad(type=Pad.TYPE_NPTH, shape=Pad.SHAPE_CIRCLE,
+              at=(0, -mount_off), size=(m2_hole, m2_hole), drill=m2_hole, layers=Pad.LAYERS_NPTH),
+        Circle(center=(0, 0), radius=tp_dia / 2, layer='Cmts.User'),
+        Circle(center=(0, 0), radius=tp_dia / 2 + thick, layer='Cmts.User'),
     ]
 
-dump_this(whole, '$fa = 0.5;\n$fs = 0.1;')
+whole.dump_this('$fa = 0.5;\n$fs = 0.1;')
 kicad_fp("touchpad-holder", footprint(), dir="fusion")

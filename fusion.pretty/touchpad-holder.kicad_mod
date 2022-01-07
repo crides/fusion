@@ -1,23 +1,21 @@
-(module touchpad-holder (layer F.Cu) (tedit 61567BCB)
+(footprint "touchpad-holder" (version 20211014) (generator pcbnew)
+  (layer "F.Cu")
+  (tedit 61D6721D)
   (attr through_hole)
-  (fp_text reference REF** (at 0 -3) (layer F.Fab) hide
+  (fp_text reference "REF**" (at 0 -3) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 9a5fd4ec-6e7a-49cc-a40e-d6c92b4c48b2)
   )
-  (fp_text value touchpad-holder (at 1.5 3) (layer F.Fab) hide
+  (fp_text value "touchpad-holder" (at 1.5 3) (layer "F.Fab") hide
     (effects (font (size 1 1) (thickness 0.15)))
+    (tstamp 0a2861c7-a509-4461-8924-97e0675c528b)
   )
-  (fp_arc (start 5.25 2.75) (end 7.5 2.75) (angle -180) (layer Cmts.User) (width 0.15))
-  (fp_arc (start 5.25 -8.75) (end 7.5 -8.75) (angle -180) (layer Cmts.User) (width 0.15))
-  (fp_line (start 3 5) (end 3 2.75) (layer Cmts.User) (width 0.15))
-  (fp_line (start 7.5 2.75) (end 7.5 5) (layer Cmts.User) (width 0.15))
-  (fp_line (start 3 -6.5) (end 3 -8.75) (layer Cmts.User) (width 0.15))
-  (fp_line (start 7.5 -8.75) (end 7.5 -6.5) (layer Cmts.User) (width 0.15))
-  (pad "" np_thru_hole circle (at 5.25 2.75) (size 2 2) (drill 2) (layers *.Cu *.Mask))
-  (pad "" np_thru_hole circle (at 5.25 -8.75) (size 2 2) (drill 2) (layers *.Cu *.Mask))
-  (fp_poly (pts (xy -6.363961 -6.5) (xy 7.5 -6.5) (xy 7.5 -5) (xy -4.863961 -5)
-     (xy -4.863961 5) (xy 7.5 5) (xy 7.5 6.5) (xy -6.363961 6.5)) (layer Cmts.User) (width 0.15))
-  (model ${KIPRJMOD}/touchpad-holder.wrl
-    (at (xyz 0 0 0))
+  (fp_circle (center 0 0) (end 13.1 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 328a8647-9779-4c82-9a67-025fad83d179))
+  (fp_circle (center 0 0) (end 12.1 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 4622cac4-f3d7-46c0-8425-a2f1acd90bc1))
+  (pad "" np_thru_hole circle (at 0 -8.1) (size 2 2) (drill 2) (layers *.Mask) (tstamp 37eb6c67-4df1-46c5-adb2-054a3a0833d0))
+  (pad "" np_thru_hole circle (at 0 8.1) (size 2 2) (drill 2) (layers *.Mask) (tstamp a878e3e8-3cae-4714-a0c6-2dee94a8087f))
+  (model "${KIPRJMOD}/touchpad-holder.wrl"
+    (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
