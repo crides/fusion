@@ -69,6 +69,7 @@
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
@@ -87,6 +88,7 @@
         "silk_over_copper": "error",
         "silk_overlap": "error",
         "skew_out_of_range": "error",
+        "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
         "track_width": "error",
@@ -380,14 +382,7 @@
         "microvia_drill": 0.1,
         "name": "tight",
         "nets": [
-          "+2V8",
-          "GND",
-          "MOSI_2V8",
-          "MOTION",
-          "SCK_2V8",
-          "SHTDWN",
-          "SHTDWN_2V8",
-          "~{CS}_2V8"
+          "GND"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
@@ -398,7 +393,7 @@
       }
     ],
     "meta": {
-      "version": 1
+      "version": 2
     },
     "net_colors": null
   },
@@ -428,13 +423,14 @@
       "intersheets_ref_show": false,
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
+      "label_size_ratio": 0.3,
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.3
     },
     "legacy_lib_dir": "",
     "legacy_lib_list": [],
     "meta": {
-      "version": 0
+      "version": 1
     },
     "net_format_name": "",
     "ngspice": {
@@ -465,10 +461,6 @@
     [
       "fc4e8313-eb71-4a8c-80c8-833de4e5d26d",
       "power"
-    ],
-    [
-      "2ba0ccb9-bc18-435e-ae61-1972d88b92d7",
-      "trackpad-8520"
     ]
   ],
   "text_variables": {}
