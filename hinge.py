@@ -22,7 +22,8 @@ def hinge1():
     stick_sketch = solid.projection(True)(stick)
     top = ring(id=nut_outer, w=ridge_thick / 2, h=10, extra=False, hole=True).z(mount_thick) + ring(id=nut_outer, w=ridge_thick / 2, h=mount_thick)
     bottom = ring(id=m2_hole, od=nut_outer, h=mount_thick, hole=True)
-    mask = stick_sketch.e(10).z(-5).r(90, 0, 0)
+    mask = stick_sketch.e(10).z(-5) * (q(20, half_total_space, 10, center="xz") + q(20, 20, ridge_thick, center="xz"))
+    mask = mask.r(90, 0, 0)
     return (top.x(nut_outer_safe) + stick.r(90, 0, 0)) * mask + bottom.x(nut_outer_safe)
 
 def hinge2():
