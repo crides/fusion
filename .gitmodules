@@ -1,6 +1,6 @@
-[submodule "keeb-libs"]
-	path = keeb-libs
-	url = https://github.com/crides/keeb-libs
+[submodule "kleeb"]
+	path = kleeb
+	url = https://github.com/crides/kleeb
 [submodule "choc"]
 	path = choc
 	url = https://github.com/crides/choc

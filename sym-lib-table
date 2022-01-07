@@ -1,4 +1,8 @@
 (sym_lib_table
-  (lib (name "keeb-libs")(type "Legacy")(uri "${KIPRJMOD}/keeb-libs/keeb-libs.lib")(options "")(descr ""))
-  (lib (name "diode-choc")(type "Legacy")(uri "${KIPRJMOD}/choc/diode-choc.lib")(options "")(descr ""))
+  (lib (name "xiao")(type "KiCad")(uri "/home/steven/gitproj/steno/pcb/libs/xiao/xiao.kicad_sym")(options "")(descr ""))
+  (lib (name "diode-choc")(type "KiCad")(uri "${KIPRJMOD}/choc/diode-choc.kicad_sym")(options "")(descr ""))
+  (lib (name "display")(type "KiCad")(uri "${KIPRJMOD}/kleeb/display.kicad_sym")(options "")(descr ""))
+  (lib (name "misc")(type "KiCad")(uri "${KIPRJMOD}/kleeb/misc.kicad_sym")(options "")(descr ""))
+  (lib (name "mcu")(type "KiCad")(uri "${KIPRJMOD}/kleeb/mcu.kicad_sym")(options "")(descr ""))
+  (lib (name "ic")(type "KiCad")(uri "${KIPRJMOD}/kleeb/ic.kicad_sym")(options "")(descr ""))
 )
