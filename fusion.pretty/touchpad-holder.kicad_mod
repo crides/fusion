@@ -1,21 +1,17 @@
-(footprint "touchpad-holder" (version 20211014) (generator pcbnew)
-  (layer "F.Cu")
-  (tedit 61D6721D)
+(module touchpad-holder (layer F.Cu) (tedit 61FBF6D7)
   (attr through_hole)
-  (fp_text reference "REF**" (at 0 -3) (layer "F.Fab") hide
+  (fp_text reference REF** (at 0 -3) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp 9a5fd4ec-6e7a-49cc-a40e-d6c92b4c48b2)
   )
-  (fp_text value "touchpad-holder" (at 1.5 3) (layer "F.Fab") hide
+  (fp_text value touchpad-holder (at 1.5 3) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp 0a2861c7-a509-4461-8924-97e0675c528b)
   )
-  (fp_circle (center 0 0) (end 13.1 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 328a8647-9779-4c82-9a67-025fad83d179))
-  (fp_circle (center 0 0) (end 12.1 0) (layer "Cmts.User") (width 0.15) (fill none) (tstamp 4622cac4-f3d7-46c0-8425-a2f1acd90bc1))
-  (pad "" np_thru_hole circle (at 0 -8.1) (size 2 2) (drill 2) (layers *.Mask) (tstamp 37eb6c67-4df1-46c5-adb2-054a3a0833d0))
-  (pad "" np_thru_hole circle (at 0 8.1) (size 2 2) (drill 2) (layers *.Mask) (tstamp a878e3e8-3cae-4714-a0c6-2dee94a8087f))
-  (model "${KIPRJMOD}/touchpad-holder.wrl"
-    (offset (xyz 0 0 0))
+  (fp_circle (center 0 0) (end 11.6 0) (layer Cmts.User) (width 0.15))
+  (fp_circle (center 0 0) (end 12.85 0) (layer Cmts.User) (width 0.15))
+  (pad "" np_thru_hole circle (at 0 8.1) (size 2 2) (drill 2) (layers *.Mask))
+  (pad "" np_thru_hole circle (at 0 -8.1) (size 2 2) (drill 2) (layers *.Mask))
+  (model ${KIPRJMOD}/touchpad-holder.wrl
+    (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
