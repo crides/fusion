@@ -1,4 +1,3 @@
-*.step
 *.scad
 __pycache__
 fusion-backups
