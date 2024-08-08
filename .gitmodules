@@ -1,9 +1,6 @@
 [submodule "kleeb"]
 	path = kleeb
 	url = https://github.com/crides/kleeb
-[submodule "choc"]
-	path = choc
-	url = https://github.com/crides/choc
 [submodule "Adafruit_CAD_Parts"]
 	path = Adafruit_CAD_Parts
 	url = https://github.com/adafruit/Adafruit_CAD_Parts

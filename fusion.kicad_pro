@@ -120,9 +120,7 @@
       },
       "track_widths": [
         0.0,
-        0.1524,
-        0.2,
-        0.254,
+        0.381,
         0.508
       ],
       "via_dimensions": [
@@ -442,9 +440,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "tight",
-        "nets": [
-          "GND"
-        ],
+        "nets": [],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1524,
@@ -462,7 +458,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "",
+      "netlist": "../../",
       "specctra_dsn": "",
       "step": "fusion.step",
       "vrml": "fusion.wrl"
@@ -516,13 +512,20 @@
       ""
     ],
     [
+      "2c5668fc-f032-4daa-80e1-b18dc4560ac4",
+      "power"
+    ],
+    [
       "b025309d-e14a-4618-a5e2-fabc6dc93b95",
       "left"
     ],
     [
-      "fc4e8313-eb71-4a8c-80c8-833de4e5d26d",
-      "power"
+      "c7193266-0423-4530-afaa-6e3d5aaf60a2",
+      "right"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "SHA1": "d29a59a",
+    "TIMESTAMP": "2022-02-13"
+  }
 }

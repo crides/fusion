@@ -1,9 +1,10 @@
 (fp_lib_table
   (lib (name "fusion")(type "KiCad")(uri "${KIPRJMOD}/fusion.pretty")(options "")(descr ""))
-  (lib (name "pg1232")(type "KiCad")(uri "${KIPRJMOD}/choc/pg1232.pretty")(options "")(descr ""))
-  (lib (name "pg1350")(type "KiCad")(uri "${KIPRJMOD}/choc/pg1350.pretty")(options "")(descr ""))
   (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/Keebio-Parts.pretty")(options "")(descr ""))
   (lib (name "display")(type "KiCad")(uri "${KIPRJMOD}/kleeb/display.pretty")(options "")(descr ""))
   (lib (name "mcu")(type "KiCad")(uri "${KIPRJMOD}/kleeb/mcu.pretty")(options "")(descr ""))
   (lib (name "misc")(type "KiCad")(uri "${KIPRJMOD}/kleeb/misc.pretty")(options "")(descr ""))
+  (lib (name "switch")(type "KiCad")(uri "${KIPRJMOD}/kleeb/switch.pretty")(options "")(descr ""))
+  (lib (name "pg1232")(type "KiCad")(uri "${KIPRJMOD}/kleeb/pg1232.pretty")(options "")(descr ""))
+  (lib (name "pg1425")(type "KiCad")(uri "${KIPRJMOD}/kleeb/pg1425.pretty")(options "")(descr ""))
 )
