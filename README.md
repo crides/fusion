@@ -10,13 +10,19 @@ You can find the caps [here](https://github.com/crides/sqdg). They are printed w
 
 The 2 extra pinky keys on the right side are different because I forgot about them when designing and printing the keycaps. Those keys are for steno, and like [the `fissure`](https://github.com/crides/fissure/) this includes [embedded stenograpy](https://github.com/crides/steno/).
 
-The keymap is basically the same as [on the fissure](http://www.keyboard-layout-editor.com/#/gists/99409a249d886554bd60af15782b2d50) with a little difference in how the gaming and alternative layout layers are toggled.
+The keymap is basically the same as [on the fissure](https://github.com/crides/fissure/?tab=readme-ov-file#latest-keymap) with a little difference in how the gaming and alternative layout layers are toggled.
 
 One extra small feature it has is a PWM controlled RGB LED, which I use to display [LED widgets](https://github.com/zmkfirmware/zmk/issues/1003) on.
 
 You can find a recent-ish configuration for this board [here](https://github.com/crides/zmk/tree/fusion-led-c-config/).
 
 With the 350mAh battery on the board, this lasted me ~5 months of usage (it could've been even longer, the battery started out not on full charge (~3.8V)).
+
+The board measures 148 x 79.5 x 21mm when it's folded (23mm thick if you include the bumpons, and 133mm long if the last 2 keys are cut off, like in the current state (see the bottom of this page)), which fits into a small bag. I carry this with my Pixel 5a in my big sweatpants pocket for quite a while. I would just go to places, take out the keeb and my phone, unfold it and work with Termux.
+
+All parts are generated from Python, some using [solidff](https://github.com/crides/solidff), some using [CadQuery](https://github.com/CadQuery/cadquery/), depending on when the part was designed. The only parts actually used are `hinge1`, `hinge2` and `touchpad-holder`.
+
+Includes JLCPCB BOM ([`bom.csv`](bom.csv)) and POS ([`pos.csv`](pos.csv)) files for PCBA.
 
 ---
 

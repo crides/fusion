@@ -28,7 +28,7 @@ def hinge1():
     return (top.x(nut_outer_safe) + stick.r(90, 0, 0)) * mask + bottom.x(nut_outer_safe)
 
 def hinge2():
-    bottom = q(nut_outer_safe, gap - ridge_thick, mount_thick, center="y").c("royalblue") - cy(d=m2_hole, h=mount_thick).x(nut_outer_safe / 2)
+    bottom = q(nut_outer_safe, gap, mount_thick, center="y").c("royalblue") - cy(d=m2_hole, h=mount_thick).x(nut_outer_safe / 2)
     return top().y(-gap / 2) + top().y(gap / 2) + bottom
 
 def hinge1_fp():
